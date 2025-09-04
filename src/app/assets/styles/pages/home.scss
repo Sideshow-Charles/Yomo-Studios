@@ -1,0 +1,19 @@
+@use '../abstracts/variables.scss' as *;
+@use '../base/base.scss' as *;
+@use '../typography/fonts.scss' as *;
+
+.home__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $secondary-background-color;
+}
+
+.hero__text {
+   text-align: center;
+   font-family: $ABeeZee-Italic;
+   font-size: 48px;
+   color: $secondary-text-color;
+   font-weight: $font-normal;
+}
