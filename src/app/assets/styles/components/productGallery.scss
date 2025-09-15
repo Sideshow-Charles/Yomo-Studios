@@ -1,0 +1,100 @@
+@use '../abstracts//variables.scss' as *;
+@use '../typography/fonts.scss' as *;
+
+.product-gallery {
+  padding: 100px 64px;
+  background-color: #fffff5;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font-family: $ABeeZee-Regular;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $ABeeZee-Italic;
+        font-size: 20px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  max-width: 380px;
+  width: 100%;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    
+    .product-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-family: $ABeeZee-Italic;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+  }
+
+  &__details {
+    padding: 25px;
+
+    h3 {
+      font-family: $ABeeZee-Regular;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-card__price {
+      font-family: $ABeeZee-Italic;
+      font-size: 22px;
+      font-weight: normal;
+      color: #ff6f61;
+    }
+
+    p {
+      font-family: $ABeeZee-Italic;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+    }
+  }
+}

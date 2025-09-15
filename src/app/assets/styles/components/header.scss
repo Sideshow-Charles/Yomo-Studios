@@ -1,0 +1,19 @@
+@use '../abstracts/variables.scss' as *;
+@use '../base/base.scss' as *;
+@use '../typography/fonts.scss' as *;
+
+.header {
+    padding: 0 120px;
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header__item {
+    font-size: $font-small;
+    font-weight: $font-medium;
+    font-family: $ABeeZee-Regular;
+}
