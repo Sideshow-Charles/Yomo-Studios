@@ -10,6 +10,7 @@ import product1 from '../app/assets/images/product1.jpeg';
 import ProductCard from './components/productCard';
 import { products } from '../app/data/productData';
 import '../app/assets/styles/components/productGallery.scss';
+import Events from '../app/components/events';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -123,6 +124,9 @@ export default function Home() {
           <p className="custom-quote__text">If you would like a specific design or something else you can’t find on the website. You can book an appointment with us on Instagram and we can further discuss your needs</p>
           <Button content='Book now'></Button>
         </div>
+      </section>
+      <section className="events__container">
+        <Events/>
       </section>
     </div>
   );
